@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Final Project - Eshan Sud</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <section id="navigation">
+            <div class="profile">
+                <p style="margin:0px;">Eshan Sud</p>
+                <div style="display:flex;">
+                    <img class="profile-icons" src="./images/envelope.png" alt="mail" />
+                    <p class="profile-icons-text"> eshansud22@gmail.com </p>
+                </div>
+                <div style="display:flex;">
+                    <img class="profile-icons" src="./images/phone.png" alt="phone" />
+                    <p class="profile-icons-text"> +91 123456789 </p>
+                </div>
+            </div>
+            <div>
+                <a class="links" href="#about-me">About Me</a>
+                <a class="links" href="#skills">Skills</a>
+                <a class="links" href="#projects">Project details</a>
+                <a class="links" href="#recommendations">Recommendations</a>
+            </div>
+        </section>
+        <hr />
+        <section id="about-me">
+            <img style="margin-left:40px;" height=300px src="./images/profile_pic.jpg" alt="About Me Photo" />
+            <div id="description">
+                <h2> Hi, I'm Eshan Sud! <br/> </h3>
+                <p>
+                    I am a software developer currently pursuing my
+                    bachelors degree in Technology in Manipal University Jaipur.
+                    I have previously worked on several projects such as a text based
+                    library management system, a GUI based bank management system,
+                    my portfolio website, and I am also currently working on several
+                    projects.
+                </p>
+            </div>
+        </section>
+        <hr />
+        <section id="skills">
+            <h2>Skills</h2>
+            <div id="skill-cards">
+                <div class="skill">
+                    <img src="./images/html.jpg" alt="HTML Logo"/>
+                    <h5>HTML</h5>
+                    <p>4 months experience</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/cssjpg.jpg" alt="CSS Logo" />
+                    <h5>CSS3</h5>
+                    <p>4 months experience</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/js.jpg" alt="Javascript Logo" />
+                    <h5>Javascript</h5>
+                    <p>4 months experience</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/java.png" alt="Java Logo" />
+                    <h5>Java</h5>
+                    <p>1 year experience</p>
+                </div>
+                <div class="skill">
+                    <img src="./images/python.png" alt="Python Logo" />
+                    <h5>Python3</h5>
+                    <p>3 years experience</p>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section id="projects">
+            <h2>Projects</h2>
+            <div style="margin-bottom:30px;">
+                <div style="margin:0px 40px 10px 40px;">
+                    <h3>Project-1</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis, nisi ut mollis lacinia, risus turpis mollis libero, sagittis feugiat.</li>
+                    </ul>
+                </div>
+                <hr style="width:75%;border:1px solid lightgray;">
+                <div style="margin:0px 40px 10px 40px;">
+                    <h3>Project-2</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis, nisi ut mollis lacinia, risus turpis mollis libero, sagittis feugiat.</li>
+                    </ul>
+                </div>
+                <hr style="width:75%;border:1px solid lightgray;">
+                <div style="margin:0px 40px 10px 40px;">
+                    <h3>Project-3</h3>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis, nisi ut mollis lacinia, risus turpis mollis libero, sagittis feugiat.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <section id="recommendations">
+            <h2>Recommendations</h2>
+            <div id="all-recommendations">
+                <div id="current-recommendations">
+                    <div class="recommendation">
+                        <span>&#8220;</span>
+                        Lorem ipsum sit amet, consectetur adipiscing elit. Cras convallis, isus turpis mollis libero, sagittis.
+                        Lorem ipsum sit amet, consectetur adipiscing elit. Cras convallis, isus turpis mollis libero, sagittis.
+                        Lorem ipsum sit amet, consectetur adipiscing elit. Cras convallis, isus turpis mollis libero, sagittis.
+                        Lorem ipsum sit amet, consectetur adipiscing elit. Cras convallis, isus turpis mollis libero, sagittis.
+                        <span>&#8221;</span>
+                    </div>
+                    <div class="recommendation">
+                        <span>&#8220;</span>
+                        Dolor sit amet,  adipiscing elit. Cras, nisi ut mollis lacinia, risus turpis mollis feugiat.
+                        <span>&#8221;</span>
+                    </div>
+                    <div class="recommendation">
+                        <span>&#8220;</span>
+                        Lorem ipsum, consectetur adipiscing elit. Cras  lacinia, risus turpis mollis libero, sagittis feugiat.
+                        <span>&#8221;</span>
+                    </div>
+                </div>
+            </div>
+            <div id="recommendation-form">
+                <fieldset>
+                    <legend style="padding:20px;">Leave a Recommendation</legend>
+                    <div id="fields">
+                        <input class="text" type="text" placeholder="Name (Optional)"> <br />
+                        <textarea id="new-recommendation" class="text" cols="50" rows="10" placeholder="Message" style="resize:none;"></textarea>
+                        <div class="button-div">
+                            <button id="submitButton">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <div id="popup">
+            <img src="./images/checkmark.png" alt="Checkmark Image"/>
+            <h2>Thanks for leaving a recommendation!</h2>
+            <div class="button-div">
+                <button id="okButton">Ok</button>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+        <div class="up-arrow-icon">
+            <a style="margin:0;padding:0;" href="#top"><img style="margin:0;padding:0;" src="images/up-arrow.png" alt="Up Arrow"></a>
+        </div>
+    </body>
+</html>

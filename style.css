@@ -1,0 +1,173 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+}
+html, body{ 
+    margin:0px;
+    font-size:15px;
+}
+#navigation{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:1cm 1cm 0cm 1cm;
+    background-color:#c61d31;
+    color:white;
+    font-weight:bolder;
+    font-size:30px;
+    margin:0;
+}
+.profile-icons{
+    height:40px;
+}
+.profile-icons-text{
+    font-size:15px;
+    font-style:italic;
+}
+.links{
+    text-decoration:none;
+    color:white;
+    font-weight:lighter;
+    font-size:25px;
+    margin:10px;
+    padding:20px;
+}
+.links:hover{
+    text-decoration:underline;
+    font-weight:bolder;
+}
+#about-me{
+    display:flex;
+}
+#description{
+    font-size:25px;
+    padding:20px;
+}
+#description p{
+    color:rgb(128, 128, 128);
+    margin-top:-1;
+}
+.skill-cards{
+    display:flex;
+    flex-direction:row;
+    flex-flow:wrap;
+}
+.skill{
+    float:left;
+    text-align:center;
+    width:5cm;
+    height:5cm;
+    font-size:20px;
+    box-shadow:0 5px 10px rgb(56, 54, 54);
+    border:2px groove #c61d31;
+    border-radius:20px;
+    padding:15px;
+    margin:20px;
+}
+.skill img{
+    height:60px;
+}
+.skill:hover{
+    cursor:default;
+    transform:scale(1.1);
+    transition-timing-function:ease-in-out;
+    transition:transform 2s;
+}
+hr{
+    clear:both;
+}
+#current-recommendations{
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    flex-flow:wrap;
+    padding:30px;
+}
+.recommendation{
+    font-style:italic;
+    text-align:left;
+    width:300px;
+    height:175px;
+    border:1px solid gray;
+    border-radius:20px;
+    box-shadow:0 3px 10px var(--primary-shadow);
+    padding:20px;
+    margin:10px;
+    font-size:20px;
+    overflow:auto;
+}
+.recommendation span{
+    color:#c61d31;
+    font-size:20px;
+}
+.up-arrow-icon img{
+    height:50px;
+}
+.up-arrow-icon{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    margin:0;
+    padding:0;
+}
+.text{
+    width:100%;
+    margin:10px;
+    font-size:15px;
+}
+h2{
+    margin:20px 0px 20px 30px;
+}
+fieldset, h2{
+    font-size:40px;
+    font-weight:bolder;
+    color:#c61d31;
+    left:30px;
+    border:none;
+}
+#fields{
+    margin:0px 25px 0px 25px;
+    width:450px;
+}
+#recommendation-form{
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    height:12cm;
+}
+.button-div{
+    display:flex;
+    justify-content:center;
+}
+button, .submitButton{
+    color:#c61d31;
+    background-color:#fff;
+    border:1px solid#c61d31;
+    border-radius:6px;
+    padding:10px;
+    width:5cm;
+    font-size:20px;
+}
+button:hover{
+    color:#fff;
+    background-color:#c61d31;
+    cursor:pointer;
+}
+#popup{
+    display:none;
+    position:fixed;
+    border-style:solid;
+    border-radius:20px;
+    border-color:#c61d31;
+    background-color:white;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    padding:20px;
+    z-index:9999;
+}
